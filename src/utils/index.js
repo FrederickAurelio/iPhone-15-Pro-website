@@ -1,57 +1,34 @@
-import hero from "/assets/images/hero.jpeg";
+const assetPath = import.meta.env.VITE_ASSET_PATH || '';
 
-export const heroImg = hero;
+function getAssetPath(path) {
+  return `${assetPath}${path}`;
+}
 
-import hmv from "/assets/videos/hero.mp4";
-import smallmv from "/assets/videos/smallHero.mp4";
-import highlightFirstmv from "/assets/videos/highlight-first.mp4";
-import highlightSectmv from "/assets/videos/hightlight-third.mp4";
-import highlightThirdmv from "/assets/videos/hightlight-sec.mp4";
-import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
-import exploremv from "/assets/videos/explore.mp4";
-import framemv from "/assets/videos/frame.mp4";
+export const heroImg = getAssetPath("/assets/images/hero.jpeg");
 
-import apple from "/assets/images/apple.svg";
-import search from "/assets/images/search.svg";
-import bag from "/assets/images/bag.svg";
-import watch from "/assets/images/watch.svg";
-import right from "/assets/images/right.svg";
-import replay from "/assets/images/replay.svg";
-import play from "/assets/images/play.svg";
-import pause from "/assets/images/pause.svg";
+export const heroVideo = getAssetPath("/assets/videos/hero.mp4");
+export const smallHeroVideo = getAssetPath("/assets/videos/smallHero.mp4");
+export const highlightFirstVideo = getAssetPath("/assets/videos/highlight-first.mp4");
+export const highlightSecondVideo = getAssetPath("/assets/videos/hightlight-third.mp4");
+export const highlightThirdVideo = getAssetPath("/assets/videos/hightlight-sec.mp4");
+export const highlightFourthVideo = getAssetPath("/assets/videos/hightlight-fourth.mp4");
+export const exploreVideo = getAssetPath("/assets/videos/explore.mp4");
+export const frameVideo = getAssetPath("/assets/videos/frame.mp4");
 
-import yellow from "/assets/images/yellow.jpg";
-import blue from "/assets/images/blue.jpg";
-import white from "/assets/images/white.jpg";
-import black from "/assets/images/black.jpg";
-import explore1 from "/assets/images/explore1.jpg";
-import explore2 from "/assets/images/explore2.jpg";
-import chip from "/assets/images/chip.jpeg";
-import frame from "/assets/images/frame.png";
+export const appleImg = getAssetPath("/assets/images/apple.svg");
+export const searchImg = getAssetPath("/assets/images/search.svg");
+export const bagImg = getAssetPath("/assets/images/bag.svg");
+export const watchImg = getAssetPath("/assets/images/watch.svg");
+export const rightImg = getAssetPath("/assets/images/right.svg");
+export const replayImg = getAssetPath("/assets/images/replay.svg");
+export const playImg = getAssetPath("/assets/images/play.svg");
+export const pauseImg = getAssetPath("/assets/images/pause.svg");
 
-export const heroVideo = hmv;
-export const smallHeroVideo = smallmv;
-export const highlightFirstVideo = highlightFirstmv;
-export const highlightSecondVideo = highlightSectmv;
-export const highlightThirdVideo = highlightThirdmv;
-export const highlightFourthVideo = highlightFourthmv;
-export const exploreVideo = exploremv;
-export const frameVideo = framemv;
-
-export const appleImg = apple;
-export const searchImg = search;
-export const bagImg = bag;
-export const watchImg = watch;
-export const rightImg = right;
-export const replayImg = replay;
-export const playImg = play;
-export const pauseImg = pause;
-
-export const yellowImg = yellow;
-export const blueImg = blue;
-export const whiteImg = white;
-export const blackImg = black;
-export const explore1Img = explore1;
-export const explore2Img = explore2;
-export const chipImg = chip;
-export const frameImg = frame;
+export const yellowImg = getAssetPath("/assets/images/yellow.jpg");
+export const blueImg = getAssetPath("/assets/images/blue.jpg");
+export const whiteImg = getAssetPath("/assets/images/white.jpg");
+export const blackImg = getAssetPath("/assets/images/black.jpg");
+export const explore1Img = getAssetPath("/assets/images/explore1.jpg");
+export const explore2Img = getAssetPath("/assets/images/explore2.jpg");
+export const chipImg = getAssetPath("/assets/images/chip.jpeg");
+export const frameImg = getAssetPath("/assets/images/frame.png");
