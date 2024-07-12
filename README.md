@@ -2,7 +2,7 @@
 This website was developed following tutorials on YouTube, learning new stacks like GSAP for animation and Three.js for the 3D Models
 
 <a href="http://120.26.45.50/apple/" target="_blank" rel="noreferrer">
-    <p>Apple (China Server) (a little bit slow because of low-end vps)</p>
+    <p>iPhone Website (China Server) (a little bit slow because of low-end vps)</p>
 </a>
 
 
